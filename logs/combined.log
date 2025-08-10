@@ -1,0 +1,2246 @@
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:40:07.298Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:40:08.380Z'
+}
+{
+  message: 'Running database seeds...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:40:08.381Z'
+}
+{
+  service: 'communication-api',
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/usr/src/app/seeds',
+  level: 'error',
+  message: "Database initialization failed: ENOENT: no such file or directory, scandir '/usr/src/app/seeds'",
+  stack: "Error: ENOENT: no such file or directory, scandir '/usr/src/app/seeds'",
+  timestamp: '2025-08-09T21:40:08.388Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:46:25.316Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:46:25.517Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:46:25.520Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:46:25.533Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:46:25.545Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:21:46:31 +0000] "GET / HTTP/1.1" 404 138 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:46:31.206Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:21:46:32 +0000] "GET /favicon.ico HTTP/1.1" 404 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:46:32.268Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:21:47:04 +0000] "GET /api HTTP/1.1" 200 619 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:47:04.876Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:50:11.720Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:50:18.052Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:50:18.355Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:50:18.363Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:50:18.382Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T21:50:18.449Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:17:33.238Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:48:58.705Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:48:59.604Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:48:59.606Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:48:59.641Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:48:59.659Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:17 +0000] "GET /docs HTTP/1.1" 301 154 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:17.712Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:17 +0000] "GET /docs/ HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:17.800Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:18 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:18.155Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:18 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:18.344Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:18 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:18.647Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:18 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:18.945Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:19 +0000] "GET / HTTP/1.1" 404 138 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:19.310Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:19 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:19.392Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:35 +0000] "GET /docs/json HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:35.424Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:36 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:36.241Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:36 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:36.380Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:36 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:36.393Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:36 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:36.408Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:49:36 +0000] "GET / HTTP/1.1" 404 138 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:49:36.855Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:10 +0000] "GET /docs/json HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:10.707Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:11 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:11.064Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:11 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:11.100Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:11 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:11.108Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:11 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:11.267Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:11 +0000] "GET / HTTP/1.1" 404 138 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:11.524Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:11 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:11.632Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:40 +0000] "GET /docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:40.085Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:40 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:40.220Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:40 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:40.225Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:40 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:40.264Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:40 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:40.268Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:50:40 +0000] "GET / HTTP/1.1" 404 138 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:50:40.629Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:55:11.556Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:55:22.306Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:55:22.672Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:55:22.673Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:55:22.686Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:55:22.705Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:22.292Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:26.768Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:27.190Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:27.193Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:27.206Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:27.215Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:57:38 +0000] "GET /docs/ HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:38.494Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:57:39 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:39.204Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:57:39 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:39.297Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:57:39 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:39.307Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:57:39 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:39.349Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:57:41 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:57:41.357Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:14.909Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:17.869Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:18.088Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:18.090Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:18.103Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:18.108Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:58:21 +0000] "GET /docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:21.282Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:58:21 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:21.674Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:58:21 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:21.724Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:58:21 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:21.728Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:58:21 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:21.833Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:22:58:22 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T22:58:22.888Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:02:04 +0000] "GET /docs/json HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:02:04.419Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:02:05 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:02:05.343Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:02:05 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:02:05.536Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:02:05 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:02:05.637Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:02:05 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:02:05.643Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:04:32 +0000] "GET /docs/json HTTP/1.1" 200 3106 "-" "curl/8.7.1"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:04:32.077Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:18:43.054Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:06.914Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:07.300Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:07.301Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:07.318Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:07.329Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:22:15 +0000] "GET /docs/json HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:15.484Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:22:16 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:16.106Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:22:16 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:16.152Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:22:16 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:16.164Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:22:16 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:22:16.360Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:29:59.992Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:07.891Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:08.225Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:08.226Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:08.242Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:08.247Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:30:34 +0000] "GET /docs/json HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:34.334Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:30:34 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:34.496Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:30:34 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:34.501Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:30:34 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:34.528Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:30:34 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:34.540Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:30:35 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:35.471Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:30:43 +0000] "GET /health HTTP/1.1" 200 104 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:30:43.284Z'
+}
+{
+  message: 'New user created: c05d10c3-0826-4027-babb-6d1d181539c5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:31:27.438Z'
+}
+{
+  message: 'Wallet created for user: c05d10c3-0826-4027-babb-6d1d181539c5, wallet ID: WALLET_c05d10c3_1754782287617',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:31:27.669Z'
+}
+{
+  message: 'Wallet auto-created for new user: c05d10c3-0826-4027-babb-6d1d181539c5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:31:27.672Z'
+}
+{
+  message: '172.21.0.1 - - [09/Aug/2025:23:31:27 +0000] "POST /api/auth/signup HTTP/1.1" 201 775 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-09T23:31:27.705Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: Email already registered',
+  stack: 'Error: Email already registered\n' +
+    '    at AuthService.signup (/usr/src/app/src/services/authService.ts:22:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at AuthController.signup (/usr/src/app/src/controllers/authController.ts:19:20)',
+  statusCode: 409,
+  url: '/api/auth/signup',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    phone: '+1234567890',
+    password: 'MySecure123!'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:12:11.525Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:12:11 +0000] "POST /api/auth/signup HTTP/1.1" 409 423 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:12:11.662Z'
+}
+{
+  message: 'User logged in: c05d10c3-0826-4027-babb-6d1d181539c5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:14:22.716Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:14:22 +0000] "POST /api/auth/login HTTP/1.1" 200 763 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:14:22.847Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:14:47 +0000] "GET /api/profile HTTP/1.1" 200 383 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:14:47.180Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: Phone number already in use',
+  stack: 'Error: Phone number already in use\n' +
+    '    at UserService.updateUser (/usr/src/app/src/services/userService.ts:48:17)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at ProfileController.updateProfile (/usr/src/app/src/controllers/profileController.ts:35:25)',
+  statusCode: 409,
+  url: '/api/profile',
+  method: 'PUT',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    name: 'John Doe',
+    phone: '+1234567890',
+    avatar: 'https://example.com/avatar.jpg'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:15:09.198Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:15:09 +0000] "PUT /api/profile HTTP/1.1" 409 449 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:15:09.207Z'
+}
+{
+  message: 'User updated: c05d10c3-0826-4027-babb-6d1d181539c5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:15:19.739Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:15:19 +0000] "PUT /api/profile HTTP/1.1" 200 409 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:15:19.743Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:15:25 +0000] "GET /api/profile HTTP/1.1" 200 411 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:15:25.135Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:15:39 +0000] "GET /api/profile/stats HTTP/1.1" 200 151 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:15:39.283Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:26 +0000] "GET /docs/json HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:26.262Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:26 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:26.688Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:26 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:26.930Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:27 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:27.032Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:27 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:27.317Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:28 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:28.058Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:34 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:34.924Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:36 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:36.040Z'
+}
+{
+  message: 'New user created: ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:49.640Z'
+}
+{
+  message: 'Wallet created for user: ae3dc41b-5c23-43fa-b017-2569c429bc99, wallet ID: WALLET_ae3dc41b_1754821069804',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:49.828Z'
+}
+{
+  message: 'Wallet auto-created for new user: ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:49.829Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:17:49 +0000] "POST /api/auth/signup HTTP/1.1" 201 778 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:17:49.834Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:18:05 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:18:05.887Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:18:09 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:18:09.003Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:18:10 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:18:10.381Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:18:14 +0000] "GET /api/profile HTTP/1.1" 200 362 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:18:14.244Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: "fileUrl" is not allowed',
+  stack: 'Error: "fileUrl" is not allowed\n' +
+    '    at /usr/src/app/src/middleware/validationMiddleware.ts:16:13\n' +
+    '    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at authenticateToken (/usr/src/app/src/middleware/authMiddleware.ts:30:5)\n' +
+    '    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /usr/src/app/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12)',
+  statusCode: 400,
+  url: '/api/messages/send',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    recipientId: 'ae3dc41b-5c23-43fa-b017-2569c429bc99',
+    content: 'Hello, how are you?',
+    messageType: 'text',
+    fileUrl: 'string'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:18:42.753Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:18:42 +0000] "POST /api/messages/send HTTP/1.1" 400 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:18:42.765Z'
+}
+{
+  message: 'Message sent: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:18:54.488Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:18:54 +0000] "POST /api/messages/send HTTP/1.1" 201 506 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:18:54.490Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: "fileUrl" is not allowed',
+  stack: 'Error: "fileUrl" is not allowed\n' +
+    '    at /usr/src/app/src/middleware/validationMiddleware.ts:16:13\n' +
+    '    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at authenticateToken (/usr/src/app/src/middleware/authMiddleware.ts:30:5)\n' +
+    '    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /usr/src/app/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12)',
+  statusCode: 400,
+  url: '/api/messages/send',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    recipientId: 'ae3dc41b-5c23-43fa-b017-2569c429bc99',
+    content: 'Hello, how are you?',
+    messageType: 'text',
+    fileUrl: 'https://example.com/avatar.jpg'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:21:13.711Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:21:13 +0000] "POST /api/messages/send HTTP/1.1" 400 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:21:13.740Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:25:26.576Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:28.649Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:30.247Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:30.260Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:30.371Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:30.454Z'
+}
+{
+  message: 'Message sent: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:32.062Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:26:32 +0000] "POST /api/messages/send HTTP/1.1" 201 534 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:32.163Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: \n' +
+    '      WITH latest_messages AS (\n' +
+    '        SELECT DISTINCT ON (\n' +
+    '          CASE \n' +
+    '            WHEN sender_id = $1 THEN recipient_id \n' +
+    '            ELSE sender_id \n' +
+    '          END\n' +
+    '        )\n' +
+    '        id,\n' +
+    '        sender_id,\n' +
+    '        recipient_id,\n' +
+    '        content,\n' +
+    '        message_type,\n' +
+    '        is_read,\n' +
+    '        created_at,\n' +
+    '        CASE \n' +
+    '          WHEN sender_id = $2 THEN recipient_id \n' +
+    '          ELSE sender_id \n' +
+    '        END as other_user_id\n' +
+    '        FROM messages \n' +
+    '        WHERE (sender_id = $3 OR recipient_id = $4) \n' +
+    '        AND is_deleted = false\n' +
+    '        ORDER BY other_user_id, created_at DESC\n' +
+    '      )\n' +
+    '      SELECT \n' +
+    '        lm.*,\n' +
+    '        u.name as other_user_name,\n' +
+    '        u.avatar as other_user_avatar,\n' +
+    '        (\n' +
+    '          SELECT COUNT(*) \n' +
+    '          FROM messages m2 \n' +
+    '          WHERE m2.recipient_id = $5 \n' +
+    '          AND m2.sender_id = lm.other_user_id \n' +
+    '          AND m2.is_read = false \n' +
+    '          AND m2.is_deleted = false\n' +
+    '        ) as unread_count\n' +
+    '      FROM latest_messages lm\n' +
+    '      JOIN users u ON u.id = lm.other_user_id\n' +
+    '      WHERE u.is_active = true\n' +
+    '      ORDER BY lm.created_at DESC\n' +
+    '      LIMIT $6 OFFSET $7\n' +
+    '     - SELECT DISTINCT ON expressions must match initial ORDER BY expressions',
+  stack: 'error: \n' +
+    '      WITH latest_messages AS (\n' +
+    '        SELECT DISTINCT ON (\n' +
+    '          CASE \n' +
+    '            WHEN sender_id = $1 THEN recipient_id \n' +
+    '            ELSE sender_id \n' +
+    '          END\n' +
+    '        )\n' +
+    '        id,\n' +
+    '        sender_id,\n' +
+    '        recipient_id,\n' +
+    '        content,\n' +
+    '        message_type,\n' +
+    '        is_read,\n' +
+    '        created_at,\n' +
+    '        CASE \n' +
+    '          WHEN sender_id = $2 THEN recipient_id \n' +
+    '          ELSE sender_id \n' +
+    '        END as other_user_id\n' +
+    '        FROM messages \n' +
+    '        WHERE (sender_id = $3 OR recipient_id = $4) \n' +
+    '        AND is_deleted = false\n' +
+    '        ORDER BY other_user_id, created_at DESC\n' +
+    '      )\n' +
+    '      SELECT \n' +
+    '        lm.*,\n' +
+    '        u.name as other_user_name,\n' +
+    '        u.avatar as other_user_avatar,\n' +
+    '        (\n' +
+    '          SELECT COUNT(*) \n' +
+    '          FROM messages m2 \n' +
+    '          WHERE m2.recipient_id = $5 \n' +
+    '          AND m2.sender_id = lm.other_user_id \n' +
+    '          AND m2.is_read = false \n' +
+    '          AND m2.is_deleted = false\n' +
+    '        ) as unread_count\n' +
+    '      FROM latest_messages lm\n' +
+    '      JOIN users u ON u.id = lm.other_user_id\n' +
+    '      WHERE u.is_active = true\n' +
+    '      ORDER BY lm.created_at DESC\n' +
+    '      LIMIT $6 OFFSET $7\n' +
+    '     - SELECT DISTINCT ON expressions must match initial ORDER BY expressions\n' +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/messages/conversations?page=1&limit=20',
+  method: 'GET',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {},
+  query: { page: 1, limit: 20 },
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:26:58.824Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:26:59 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:26:59.199Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:31:43.254Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:31:50.797Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:31:51.250Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:31:51.255Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:31:51.277Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:31:51.297Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:32:03 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 200 518 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:32:03.573Z'
+}
+{
+  message: 'Message sent: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:32:52.546Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:32:52 +0000] "POST /api/messages/send HTTP/1.1" 201 540 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:32:52.550Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:32:58 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 200 524 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:32:58.488Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:33:39.307Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:33:42.683Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:33:42.886Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:33:42.887Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:33:42.898Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:33:42.908Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:33:52 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:33:52.641Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:34:20.353Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:34:24.207Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:34:24.393Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:34:24.394Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:34:24.400Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:34:24.410Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:38:56 +0000] "GET /api/messages/history/ae3dc41b-5c23-43fa-b017-2569c429bc99?page=1&limit=20 HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:38:56.703Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:39:21 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:39:21.917Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:39:25 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:39:25.563Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:39:28 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:39:28.077Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:39:32 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 200 552 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:39:32.108Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:40:00 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:40:00.080Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:40:03 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:40:03.890Z'
+}
+{
+  message: 'Message marked as read: 55de9aca-89b8-44ca-b642-1077052b2b62 by ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:40:08.946Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:40:08 +0000] "PUT /api/messages/55de9aca-89b8-44ca-b642-1077052b2b62/read HTTP/1.1" 200 51 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:40:08.950Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:40:12 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:40:12.484Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:40:41 +0000] "GET /api/messages/55de9aca-89b8-44ca-b642-1077052b2b62 HTTP/1.1" 200 566 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:40:41.395Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:40:54 +0000] "GET /api/messages/unread/count HTTP/1.1" 200 92 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:40:54.857Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: \n' +
+    '        SELECT COUNT(DISTINCT \n' +
+    '          CASE \n' +
+    '            WHEN sender_id = $1 THEN recipient_id \n' +
+    '            ELSE sender_id \n' +
+    '          END\n' +
+    '        ) as count\n' +
+    '        FROM messages m\n' +
+    '        JOIN users u ON (\n' +
+    '          (m.sender_id = $2 AND u.id = m.recipient_id) OR\n' +
+    '          (m.recipient_id = $3 AND u.id = m.sender_id)\n' +
+    '        )\n' +
+    '        WHERE (sender_id = $4 OR recipient_id = $5) \n' +
+    '        AND is_deleted = false\n' +
+    '        AND u.is_active = true\n' +
+    "        AND created_at >= NOW() - INTERVAL '30 days'\n" +
+    '       - column reference "created_at" is ambiguous',
+  stack: 'error: \n' +
+    '        SELECT COUNT(DISTINCT \n' +
+    '          CASE \n' +
+    '            WHEN sender_id = $1 THEN recipient_id \n' +
+    '            ELSE sender_id \n' +
+    '          END\n' +
+    '        ) as count\n' +
+    '        FROM messages m\n' +
+    '        JOIN users u ON (\n' +
+    '          (m.sender_id = $2 AND u.id = m.recipient_id) OR\n' +
+    '          (m.recipient_id = $3 AND u.id = m.sender_id)\n' +
+    '        )\n' +
+    '        WHERE (sender_id = $4 OR recipient_id = $5) \n' +
+    '        AND is_deleted = false\n' +
+    '        AND u.is_active = true\n' +
+    "        AND created_at >= NOW() - INTERVAL '30 days'\n" +
+    '       - column reference "created_at" is ambiguous\n' +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/messages/stats',
+  method: 'GET',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {},
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:41:11.679Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:41:11 +0000] "GET /api/messages/stats HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:41:11.908Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:43:20.839Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:43:30.942Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:43:31.481Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:43:31.483Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:43:31.502Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:43:31.508Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:43:35 +0000] "GET /api/messages/stats HTTP/1.1" 200 151 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:43:35.836Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:44:24 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:44:24.063Z'
+}
+{
+  message: 'Call initiated: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99, type: video, id: eb6c87b9-4eda-4f52-a384-f578096316e9',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:44:49.634Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:44:49 +0000] "POST /api/calls HTTP/1.1" 201 526 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:44:49.653Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:45:26 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:45:26.049Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:45:28 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:45:28.768Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:45:30 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:45:30.034Z'
+}
+{
+  message: 'Call status updated: eb6c87b9-4eda-4f52-a384-f578096316e9, status: answered',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:45:39.138Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:45:39 +0000] "PUT /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/answer HTTP/1.1" 200 548 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:45:39.145Z'
+}
+{
+  message: 'Call ended: eb6c87b9-4eda-4f52-a384-f578096316e9, duration: 29s, reason: completed',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:46:08.274Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:46:08 +0000] "PUT /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/end HTTP/1.1" 200 569 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:46:08.279Z'
+}
+{
+  message: 'Call status updated: eb6c87b9-4eda-4f52-a384-f578096316e9, status: ringing',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:46:21.461Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:46:21 +0000] "PUT /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/status HTTP/1.1" 200 578 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:46:21.493Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:46:40 +0000] "GET /api/calls/history?page=1&limit=20 HTTP/1.1" 200 690 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:46:40.494Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:46:59 +0000] "GET /api/calls/active HTTP/1.1" 200 565 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:46:59.790Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:47:18 +0000] "GET /api/calls/stats HTTP/1.1" 200 183 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:47:18.729Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:47:31 +0000] "GET /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9 HTTP/1.1" 200 583 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:47:31.272Z'
+}
+{
+  service: 'communication-api',
+  message: `Error occurred: update "calls" set "metadata" = jsonb_set(metadata, '{offer}', $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, unknown, boolean) does not exist`,
+  stack: `error: update "calls" set "metadata" = jsonb_set(metadata, '{offer}', $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, unknown, boolean) does not exist\n` +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/offer',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    offer: {
+      type: 'offer',
+      sdp: 'v=0\r\no=- 123456789 123456789 IN IP4 0.0.0.0\r\n...'
+    },
+    targetUserId: '550e8400-e29b-41d4-a716-446655440000'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:48:06.340Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:48:06 +0000] "POST /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/offer HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:48:06.392Z'
+}
+{
+  service: 'communication-api',
+  message: `Error occurred: update "calls" set "metadata" = jsonb_set(metadata, '{offer}', $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, unknown, boolean) does not exist`,
+  stack: `error: update "calls" set "metadata" = jsonb_set(metadata, '{offer}', $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, unknown, boolean) does not exist\n` +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/offer',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    offer: {
+      type: 'offer',
+      sdp: 'v=0\r\no=- 123456789 123456789 IN IP4 0.0.0.0\r\n...'
+    },
+    targetUserId: 'ae3dc41b-5c23-43fa-b017-2569c429bc99'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:48:44.483Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:48:44 +0000] "POST /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/offer HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:48:44.496Z'
+}
+{
+  service: 'communication-api',
+  message: `Error occurred: update "calls" set "metadata" = jsonb_set(metadata, '{offer}', $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, unknown, boolean) does not exist`,
+  stack: `error: update "calls" set "metadata" = jsonb_set(metadata, '{offer}', $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, unknown, boolean) does not exist\n` +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/offer',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    offer: {
+      type: 'offer',
+      sdp: 'v=0\r\no=- 123456789 123456789 IN IP4 0.0.0.0\r\n...'
+    },
+    targetUserId: 'ae3dc41b-5c23-43fa-b017-2569c429bc99'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:50:19.201Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:50:19 +0000] "POST /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/offer HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:50:19.273Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:23.602Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:35.905Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:36.237Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:36.240Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:36.260Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:36.276Z'
+}
+{
+  message: 'WebRTC offer created for call: eb6c87b9-4eda-4f52-a384-f578096316e9',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:39.218Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:52:39 +0000] "POST /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/offer HTTP/1.1" 200 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:52:39.268Z'
+}
+{
+  service: 'communication-api',
+  message: `Error occurred: update "calls" set "metadata" = jsonb_set(metadata, '{ice_candidates}', COALESCE(metadata->'{ice_candidates}', '[]') || $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, text, boolean) does not exist`,
+  stack: `error: update "calls" set "metadata" = jsonb_set(metadata, '{ice_candidates}', COALESCE(metadata->'{ice_candidates}', '[]') || $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, text, boolean) does not exist\n` +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/ice-candidate',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    candidate: {
+      candidate: 'candidate:1 1 UDP 2130706431 192.168.1.100 54400 typ host',
+      sdpMLineIndex: 0,
+      sdpMid: 'video'
+    },
+    targetUserId: 'ae3dc41b-5c23-43fa-b017-2569c429bc99'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:53:34.292Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:53:34 +0000] "POST /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/ice-candidate HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:53:34.495Z'
+}
+{
+  service: 'communication-api',
+  message: `Error occurred: update "calls" set "metadata" = jsonb_set(metadata, '{ice_candidates}', COALESCE(metadata->'{ice_candidates}', '[]') || $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, text, boolean) does not exist`,
+  stack: `error: update "calls" set "metadata" = jsonb_set(metadata, '{ice_candidates}', COALESCE(metadata->'{ice_candidates}', '[]') || $1, true), "updated_at" = $2 where "id" = $3 - function jsonb_set(json, unknown, text, boolean) does not exist\n` +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/ice-candidate',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    candidate: {
+      candidate: 'candidate:1 1 UDP 2130706431 192.168.1.100 54400 typ host',
+      sdpMLineIndex: 0,
+      sdpMid: 'video'
+    },
+    targetUserId: 'ae3dc41b-5c23-43fa-b017-2569c429bc99'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:54:33.387Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:54:33 +0000] "POST /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/ice-candidate HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:54:33.603Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:31.028Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:41.586Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:42.256Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:42.258Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:42.289Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:42.311Z'
+}
+{
+  message: 'ICE candidate added for call: eb6c87b9-4eda-4f52-a384-f578096316e9',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:49.395Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:55:49 +0000] "POST /api/calls/eb6c87b9-4eda-4f52-a384-f578096316e9/ice-candidate HTTP/1.1" 200 61 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:55:49.451Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: Wallet already exists for this user',
+  stack: 'Error: Wallet already exists for this user\n' +
+    '    at WalletService.createWallet (/usr/src/app/src/services/walletService.ts:21:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at WalletController.createWallet (/usr/src/app/src/controllers/walletController.ts:18:20)',
+  statusCode: 409,
+  url: '/api/wallet',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: { currency: 'NGN' },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:57:21.093Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:57:21 +0000] "POST /api/wallet HTTP/1.1" 409 476 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:57:21.107Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:57:48 +0000] "GET /api/wallet HTTP/1.1" 200 561 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:57:48.173Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:58:15 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:58:15.756Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:58:18 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:58:18.126Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:58:22 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:58:22.053Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:58:27 +0000] "GET /api/wallet HTTP/1.1" 200 561 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:58:27.794Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: Wallet already exists for this user',
+  stack: 'Error: Wallet already exists for this user\n' +
+    '    at WalletService.createWallet (/usr/src/app/src/services/walletService.ts:21:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at WalletController.createWallet (/usr/src/app/src/controllers/walletController.ts:18:20)',
+  statusCode: 409,
+  url: '/api/wallet',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: { currency: 'USD' },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T10:58:43.876Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:58:43 +0000] "POST /api/wallet HTTP/1.1" 409 476 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:58:43.880Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:59:21 +0000] "GET /api/wallet/balance HTTP/1.1" 200 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:59:21.752Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:59:32 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:59:32.670Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:59:35 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:59:35.076Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:59:39 +0000] "GET /api/wallet/balance HTTP/1.1" 200 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:59:39.478Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:10:59:56 +0000] "GET /api/wallet/transactions?limit=50 HTTP/1.1" 200 74 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T10:59:56.607Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:00:14 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:00:14.673Z'
+}
+{
+  message: 'Wallet balance updated: WALLET_c05d10c3_1754782287617, new balance: 7214.5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:00:30.636Z'
+}
+{
+  service: 'communication-api',
+  message: 'Error occurred: update "wallets" set "balance" = $1, "updated_at" = $2 where "wallet_id" = $3 - invalid input syntax for type numeric: "76004.00100.5"',
+  stack: 'error: update "wallets" set "balance" = $1, "updated_at" = $2 where "wallet_id" = $3 - invalid input syntax for type numeric: "76004.00100.5"\n' +
+    '    at Parser.parseErrorMessage (/usr/src/app/node_modules/pg-protocol/src/parser.ts:369:69)\n' +
+    '    at Parser.handlePacket (/usr/src/app/node_modules/pg-protocol/src/parser.ts:187:21)\n' +
+    '    at Parser.parse (/usr/src/app/node_modules/pg-protocol/src/parser.ts:102:30)\n' +
+    '    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/src/index.ts:7:48)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at addChunk (node:internal/streams/readable:368:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:341:9)\n' +
+    '    at Socket.Readable.push (node:internal/streams/readable:278:10)\n' +
+    '    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)',
+  statusCode: 500,
+  url: '/api/wallet/transfer',
+  method: 'POST',
+  ip: '172.21.0.1',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+  body: {
+    toUserId: 'ae3dc41b-5c23-43fa-b017-2569c429bc99',
+    amount: 100.5,
+    description: 'Payment for services'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2025-08-10T11:00:30.736Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:00:30 +0000] "POST /api/wallet/transfer HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:00:30.822Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:03:39 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:03:39.537Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:08:40.973Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:08:48.315Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:08:48.650Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:08:48.652Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:08:48.681Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:08:48.700Z'
+}
+{
+  message: 'Wallet balance updated: WALLET_c05d10c3_1754782287617, new balance: 65378.5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:09:59.421Z'
+}
+{
+  message: 'Wallet balance updated: WALLET_ae3dc41b_1754821069804, new balance: 76104.5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:09:59.434Z'
+}
+{
+  message: 'Transfer completed: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99, amount: 100.5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:09:59.440Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:09:59 +0000] "POST /api/wallet/transfer HTTP/1.1" 200 59 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:09:59.623Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:10:12 +0000] "GET /api/wallet/balance HTTP/1.1" 200 148 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:10:12.394Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:10:17 +0000] "GET /api/wallet/balance HTTP/1.1" 200 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:10:17.579Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:10:20 +0000] "GET /api/wallet/balance HTTP/1.1" 200 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:10:20.346Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:10:28 +0000] "GET /docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:10:28.768Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:10:32 +0000] "GET /api/wallet/transactions?limit=50 HTTP/1.1" 200 74 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:10:32.949Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:10:42 +0000] "GET /api/wallet/transactions?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:10:42.849Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:30:42 +0000] "GET /admin HTTP/1.1" 404 143 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:30:42.978Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:33:59.626Z'
+}
+{
+  message: 'Running database migrations...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:42:34.917Z'
+}
+{
+  message: 'Database migrations completed successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:42:36.659Z'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:42:36.662Z'
+}
+{
+  message: 'Socket.IO initialized successfully',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:42:36.766Z'
+}
+{
+  message: 'Server running on 0.0.0.0:3000 in development mode',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:42:36.853Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:43:12 +0000] "GET /admin HTTP/1.1" 404 143 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:43:12.726Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:43:31 +0000] "GET /docs/json HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:43:31.686Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:43:33 +0000] "GET /docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:43:33.093Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:43:33 +0000] "GET /docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:43:33.338Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:43:33 +0000] "GET /docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:43:33.428Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:11:43:33 +0000] "GET /docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T11:43:33.823Z'
+}
+{
+  message: 'Socket authenticated: _FKJOxtCoY0QPL3QAAAL for user c05d10c3-0826-4027-babb-6d1d181539c5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:17:11.640Z'
+}
+{
+  message: 'User connected: c05d10c3-0826-4027-babb-6d1d181539c5 (_FKJOxtCoY0QPL3QAAAL)',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:17:12.701Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:12:18:41 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 200 523 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:18:41.743Z'
+}
+{
+  message: 'User disconnected: c05d10c3-0826-4027-babb-6d1d181539c5 (_FKJOxtCoY0QPL3QAAAL)',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:19:18.982Z'
+}
+{
+  message: 'Socket authenticated: pZ_X81xCholhPZGXAAAN for user c05d10c3-0826-4027-babb-6d1d181539c5',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:19:25.249Z'
+}
+{
+  message: 'User connected: c05d10c3-0826-4027-babb-6d1d181539c5 (pZ_X81xCholhPZGXAAAN)',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:19:25.252Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:12:21:48 +0000] "GET /api/calls/history?page=1&limit=20 HTTP/1.1" 200 904 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:21:48.246Z'
+}
+{
+  message: 'Message sent: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:34:49.659Z'
+}
+{
+  message: 'Real-time message sent: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:34:49.681Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:12:36:14 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 200 524 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:36:14.664Z'
+}
+{
+  message: 'Message sent: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:36:35.447Z'
+}
+{
+  message: 'Real-time message sent: c05d10c3-0826-4027-babb-6d1d181539c5 -> ae3dc41b-5c23-43fa-b017-2569c429bc99',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:36:35.479Z'
+}
+{
+  message: '172.21.0.1 - - [10/Aug/2025:12:36:42 +0000] "GET /api/messages/conversations?page=1&limit=20 HTTP/1.1" 200 523 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:36:42.228Z'
+}
+{
+  message: 'User disconnected: c05d10c3-0826-4027-babb-6d1d181539c5 (pZ_X81xCholhPZGXAAAN)',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:39:23.326Z'
+}
+{
+  message: 'Received SIGTERM. Starting graceful shutdown...',
+  level: 'info',
+  service: 'communication-api',
+  timestamp: '2025-08-10T12:46:07.816Z'
+}

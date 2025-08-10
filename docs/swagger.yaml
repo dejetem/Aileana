@@ -1,0 +1,2059 @@
+openapi: 3.0.3
+info:
+  title: Communication API
+  description: A comprehensive API for authentication, messaging, calling, and wallet management
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@example.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:3000
+    description: Production server
+  - url: https://staging-api.example.com
+    description: Staging server
+  - url: http://localhost:3000
+    description: Development server
+
+security:
+  - BearerAuth: []
+
+paths:
+  # Health Check
+  /health:
+    get:
+      tags:
+        - Health
+      summary: Health check endpoint
+      description: Check API health and status
+      security: []
+      responses:
+        '200':
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+                  timestamp:
+                    type: string
+                    format: date-time
+                  uptime:
+                    type: number
+                    description: Uptime in seconds
+                  environment:
+                    type: string
+                    example: production
+
+  # Authentication Routes
+  /api/auth/signup:
+    post:
+      tags:
+        - Authentication
+      summary: Register a new user
+      description: Create a new user account
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SignupRequest'
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '409':
+          $ref: '#/components/responses/ConflictError'
+
+  /api/auth/login:
+    post:
+      tags:
+        - Authentication
+      summary: Authenticate user
+      description: Login user and return authentication tokens
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/auth/refresh:
+    post:
+      tags:
+        - Authentication
+      summary: Refresh access token
+      description: Get a new access token using refresh token
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenRequest'
+      responses:
+        '200':
+          description: Token refreshed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/auth/logout:
+    post:
+      tags:
+        - Authentication
+      summary: Logout user
+      description: Logout user and revoke refresh token
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenRequest'
+      responses:
+        '200':
+          description: Logout successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Logout successful
+        '400':
+          $ref: '#/components/responses/ValidationError'
+
+  # Profile Routes
+  /api/profile:
+    get:
+      tags:
+        - Profile
+      summary: Get current user's profile
+      description: Retrieve the authenticated user's profile information
+      responses:
+        '200':
+          description: Profile retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserProfile'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+    put:
+      tags:
+        - Profile
+      summary: Update current user's profile
+      description: Update the authenticated user's profile information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileRequest'
+      responses:
+        '200':
+          description: Profile updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserProfile'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/profile/stats:
+    get:
+      tags:
+        - Profile
+      summary: Get user statistics
+      description: Retrieve statistics for the authenticated user
+      responses:
+        '200':
+          description: User statistics retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserStats'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  # Message Routes
+  /api/messages/send:
+    post:
+      tags:
+        - Messages
+      summary: Send a message
+      description: Send a message to another user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendMessageRequest'
+      responses:
+        '201':
+          description: Message sent successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/messages/conversations:
+    get:
+      tags:
+        - Messages
+      summary: Get user's conversations
+      description: Retrieve list of conversations for the authenticated user
+      parameters:
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses:
+        '200':
+          description: Conversations retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConversationsResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/messages/history/{userId}:
+    get:
+      tags:
+        - Messages
+      summary: Get message history with specific user
+      description: Retrieve message history between authenticated user and specified user
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses:
+        '200':
+          description: Message history retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageHistoryResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/messages/{id}/read:
+    put:
+      tags:
+        - Messages
+      summary: Mark message as read
+      description: Mark a specific message as read
+      parameters:
+        - $ref: '#/components/parameters/MessageIdParam'
+      responses:
+        '200':
+          description: Message marked as read
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/messages/read/{userId}:
+    put:
+      tags:
+        - Messages
+      summary: Mark all messages from user as read
+      description: Mark all messages from a specific user as read
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      responses:
+        '200':
+          description: Messages marked as read
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/messages/{id}:
+    get:
+      tags:
+        - Messages
+      summary: Get specific message
+      description: Retrieve details of a specific message
+      parameters:
+        - $ref: '#/components/parameters/MessageIdParam'
+      responses:
+        '200':
+          description: Message retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+    delete:
+      tags:
+        - Messages
+      summary: Delete a message
+      description: Delete a specific message
+      parameters:
+        - $ref: '#/components/parameters/MessageIdParam'
+      responses:
+        '200':
+          description: Message deleted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/messages/conversation/{userId}:
+    delete:
+      tags:
+        - Messages
+      summary: Delete entire conversation
+      description: Delete entire conversation with a specific user
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      responses:
+        '200':
+          description: Conversation deleted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/messages/unread/count:
+    get:
+      tags:
+        - Messages
+      summary: Get unread messages count
+      description: Get count of unread messages for authenticated user
+      responses:
+        '200':
+          description: Unread count retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 5
+
+  /api/messages/search:
+    get:
+      tags:
+        - Messages
+      summary: Search messages
+      description: Search through user's messages
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+            minLength: 1
+            maxLength: 100
+          description: Search query
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses:
+        '200':
+          description: Search results retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageHistoryResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/messages/stats:
+    get:
+      tags:
+        - Messages
+      summary: Get message statistics
+      description: Get message statistics for authenticated user
+      responses:
+        '200':
+          description: Message statistics retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageStats'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  # Call Routes
+  /api/calls:
+    post:
+      tags:
+        - Calls
+      summary: Start a call
+      description: Initiate a new call
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StartCallRequest'
+      responses:
+        '201':
+          description: Call started successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Call'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/calls/{callId}/answer:
+    put:
+      tags:
+        - Calls
+      summary: Answer a call
+      description: Answer an incoming call
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      responses:
+        '200':
+          description: Call answered successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Call'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/calls/{callId}/reject:
+    put:
+      tags:
+        - Calls
+      summary: Reject a call
+      description: Reject an incoming call
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      responses:
+        '200':
+          description: Call rejected successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Call'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/calls/{callId}/end:
+    put:
+      tags:
+        - Calls
+      summary: End a call
+      description: End an active call
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                endReason:
+                  type: string
+                  enum: [completed, rejected, failed]
+                  default: completed
+      responses:
+        '200':
+          description: Call ended successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Call'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/calls/{callId}/status:
+    put:
+      tags:
+        - Calls
+      summary: Update call status
+      description: Update the status of a call
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - status
+              properties:
+                status:
+                  type: string
+                  enum: [ringing, answered, ended, missed, rejected]
+      responses:
+        '200':
+          description: Call status updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Call'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/calls/history:
+    get:
+      tags:
+        - Calls
+      summary: Get call history
+      description: Retrieve call history for authenticated user
+      parameters:
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+        - name: callType
+          in: query
+          schema:
+            type: string
+            enum: [voice, video]
+          description: Filter by call type
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [initiated, ringing, answered, ended, missed, rejected]
+          description: Filter by call status
+      responses:
+        '200':
+          description: Call history retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CallHistoryResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/calls/active:
+    get:
+      tags:
+        - Calls
+      summary: Get active call
+      description: Get currently active call for authenticated user
+      responses:
+        '200':
+          description: Active call retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Call'
+        '404':
+          description: No active call found
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/calls/stats:
+    get:
+      tags:
+        - Calls
+      summary: Get call statistics
+      description: Get call statistics for authenticated user
+      responses:
+        '200':
+          description: Call statistics retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CallStats'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/calls/{callId}:
+    get:
+      tags:
+        - Calls
+      summary: Get specific call details
+      description: Retrieve details of a specific call
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      responses:
+        '200':
+          description: Call details retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Call'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+    delete:
+      tags:
+        - Calls
+      summary: Delete a call record
+      description: Delete a specific call record
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      responses:
+        '200':
+          description: Call record deleted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  # WebRTC Signaling Routes
+  /api/calls/{callId}/offer:
+    post:
+      tags:
+        - WebRTC Signaling
+      summary: Create WebRTC offer
+      description: Create and send WebRTC offer for call setup
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WebRTCOfferRequest'
+      responses:
+        '200':
+          description: WebRTC offer created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/calls/{callId}/answer:
+    post:
+      tags:
+        - WebRTC Signaling
+      summary: Create WebRTC answer
+      description: Create and send WebRTC answer for call setup
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WebRTCAnswerRequest'
+      responses:
+        '200':
+          description: WebRTC answer created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/calls/{callId}/ice-candidate:
+    post:
+      tags:
+        - WebRTC Signaling
+      summary: Add ICE candidate
+      description: Add ICE candidate for WebRTC connection
+      parameters:
+        - $ref: '#/components/parameters/CallIdParam'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ICECandidateRequest'
+      responses:
+        '200':
+          description: ICE candidate added successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  # Wallet Routes
+  /api/wallet:
+    post:
+      tags:
+        - Wallet
+      summary: Create wallet
+      description: Create a new wallet for the authenticated user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateWalletRequest'
+      responses:
+        '201':
+          description: Wallet created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wallet'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '409':
+          $ref: '#/components/responses/ConflictError'
+
+    get:
+      tags:
+        - Wallet
+      summary: Get current user's wallet
+      description: Retrieve wallet information for authenticated user
+      responses:
+        '200':
+          description: Wallet retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wallet'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/wallet/balance:
+    get:
+      tags:
+        - Wallet
+      summary: Get wallet balance
+      description: Get fresh wallet balance from OnePipe
+      responses:
+        '200':
+          description: Wallet balance retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  balance:
+                    type: number
+                    format: decimal
+                    example: 1250.50
+                  currency:
+                    type: string
+                    example: NGN
+                  lastUpdated:
+                    type: string
+                    format: date-time
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/wallet/transactions:
+    get:
+      tags:
+        - Wallet
+      summary: Get wallet transactions
+      description: Retrieve transaction history for user's wallet
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 50
+          description: Number of transactions to retrieve
+      responses:
+        '200':
+          description: Transactions retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransactionsResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/wallet/transfer:
+    post:
+      tags:
+        - Wallet
+      summary: Transfer funds
+      description: Transfer funds to another user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransferRequest'
+      responses:
+        '201':
+          description: Transfer completed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaction'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '402':
+          description: Insufficient funds
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/wallet/suspend:
+    put:
+      tags:
+        - Wallet
+      summary: Suspend wallet
+      description: Suspend user's wallet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reason:
+                  type: string
+                  maxLength: 500
+                  description: Reason for suspension
+      responses:
+        '200':
+          description: Wallet suspended successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wallet'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/wallet/activate:
+    put:
+      tags:
+        - Wallet
+      summary: Activate wallet
+      description: Activate a suspended wallet
+      responses:
+        '200':
+          description: Wallet activated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wallet'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/wallet/stats:
+    get:
+      tags:
+        - Wallet
+      summary: Get wallet statistics
+      description: Get wallet statistics for authenticated user
+      responses:
+        '200':
+          description: Wallet statistics retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WalletStats'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  # Admin Wallet Routes
+  /api/wallet/user/{userId}:
+    get:
+      tags:
+        - Wallet (Admin)
+      summary: Get specific user's wallet
+      description: Get wallet information for a specific user (admin only)
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      responses:
+        '200':
+          description: User wallet retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wallet'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/wallet/user/{userId}/suspend:
+    put:
+      tags:
+        - Wallet (Admin)
+      summary: Suspend specific user's wallet
+      description: Suspend a specific user's wallet (admin only)
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - reason
+              properties:
+                reason:
+                  type: string
+                  maxLength: 500
+                  description: Reason for suspension
+      responses:
+        '200':
+          description: User wallet suspended successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wallet'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/wallet/user/{userId}/activate:
+    put:
+      tags:
+        - Wallet (Admin)
+      summary: Activate specific user's wallet
+      description: Activate a specific user's wallet (admin only)
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      responses:
+        '200':
+          description: User wallet activated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wallet'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    PageParam:
+      name: page
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+      description: Page number for pagination
+
+    LimitParam:
+      name: limit
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 20
+      description: Number of items per page
+
+    UserIdParam:
+      name: userId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+      description: User ID
+
+    MessageIdParam:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+      description: Message ID
+
+    CallIdParam:
+      name: callId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+      description: Call ID
+
+  schemas:
+    # Authentication Schemas
+    SignupRequest:
+      type: object
+      required:
+        - name
+        - email
+        - phone
+        - password
+      properties:
+        name:
+          type: string
+          minLength: 2
+          maxLength: 100
+          example: John Doe
+        email:
+          type: string
+          format: email
+          example: john.doe@example.com
+        phone:
+          type: string
+          # pattern: '^\+?[1-9]\d{7,14}$'
+          example: "+1234567890"
+        password:
+          type: string
+          minLength: 8
+          maxLength: 128
+          pattern: '^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]'
+          description: Must contain uppercase, lowercase, number, and special character
+          example: MySecure123!
+
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: john.doe@example.com
+        password:
+          type: string
+          example: MySecure123!
+
+    RefreshTokenRequest:
+      type: object
+      required:
+        - refreshToken
+      properties:
+        refreshToken:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+    AuthResponse:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/User'
+        accessToken:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        refreshToken:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        message:
+          type: string
+          example: Login successful
+
+    TokenResponse:
+      type: object
+      properties:
+        accessToken:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        refreshToken:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+    # User Schemas
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        name:
+          type: string
+          example: John Doe
+        email:
+          type: string
+          format: email
+          example: john.doe@example.com
+        phone:
+          type: string
+          example: +1234567890
+        avatar:
+          type: string
+          format: uri
+          nullable: true
+          example: https://example.com/avatar.jpg
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    UserProfile:
+      allOf:
+        - $ref: '#/components/schemas/User'
+        - type: object
+          properties:
+            isOnline:
+              type: boolean
+              example: true
+            lastSeen:
+              type: string
+              format: date-time
+
+    UpdateProfileRequest:
+      type: object
+      minProperties: 1
+      properties:
+        name:
+          type: string
+          minLength: 2
+          maxLength: 100
+          example: John Doe
+        phone:
+          type: string
+          # pattern: '^\+?[1-9]\d{7,14}
+          example: "+1234567890"
+        avatar:
+          type: string
+          format: uri
+          example: https://example.com/avatar.jpg
+
+    UserStats:
+      type: object
+      properties:
+        totalMessages:
+          type: integer
+          example: 150
+        totalCalls:
+          type: integer
+          example: 25
+        totalCallTime:
+          type: integer
+          description: Total call time in seconds
+          example: 3600
+        joinedAt:
+          type: string
+          format: date-time
+
+    # Message Schemas
+    SendMessageRequest:
+      type: object
+      required:
+        - recipientId
+        - content
+      properties:
+        recipientId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        content:
+          type: string
+          minLength: 1
+          maxLength: 5000
+          example: Hello, how are you?
+        messageType:
+          type: string
+          enum: [text, image, file]
+          default: text
+        fileUrl:
+          type: string
+          format: uri
+          description: Required when messageType is 'image' or 'file'
+          # example: https://example.com/file.jpg
+
+    Message:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        senderId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        recipientId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        content:
+          type: string
+          example: Hello, how are you?
+        messageType:
+          type: string
+          enum: [text, image, file]
+        fileUrl:
+          type: string
+          format: uri
+          nullable: true
+        isRead:
+          type: boolean
+          example: false
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    ConversationsResponse:
+      type: object
+      properties:
+        conversations:
+          type: array
+          items:
+            type: object
+            properties:
+              userId:
+                type: string
+                format: uuid
+              userName:
+                type: string
+              userAvatar:
+                type: string
+                format: uri
+                nullable: true
+              lastMessage:
+                $ref: '#/components/schemas/Message'
+              unreadCount:
+                type: integer
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+
+    MessageHistoryResponse:
+      type: object
+      properties:
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+
+    MessageStats:
+      type: object
+      properties:
+        totalSent:
+          type: integer
+          example: 75
+        totalReceived:
+          type: integer
+          example: 80
+        totalUnread:
+          type: integer
+          example: 5
+        averageResponseTime:
+          type: number
+          description: Average response time in minutes
+          example: 15.5
+
+    # Call Schemas
+    StartCallRequest:
+      type: object
+      required:
+        - calleeId
+        - callType
+      properties:
+        calleeId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        callType:
+          type: string
+          enum: [voice, video]
+          example: video
+
+    Call:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        callerId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        calleeId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        callType:
+          type: string
+          enum: [voice, video]
+        status:
+          type: string
+          enum: [initiated, ringing, answered, ended, missed, rejected]
+        startTime:
+          type: string
+          format: date-time
+        endTime:
+          type: string
+          format: date-time
+          nullable: true
+        duration:
+          type: integer
+          description: Call duration in seconds
+          nullable: true
+        endReason:
+          type: string
+          enum: [completed, rejected, failed]
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    CallHistoryResponse:
+      type: object
+      properties:
+        calls:
+          type: array
+          items:
+            allOf:
+              - $ref: '#/components/schemas/Call'
+              - type: object
+                properties:
+                  callerName:
+                    type: string
+                  calleeName:
+                    type: string
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+
+    CallStats:
+      type: object
+      properties:
+        totalCalls:
+          type: integer
+          example: 25
+        totalCallTime:
+          type: integer
+          description: Total call time in seconds
+          example: 3600
+        averageCallDuration:
+          type: number
+          description: Average call duration in seconds
+          example: 144.5
+        callsByType:
+          type: object
+          properties:
+            voice:
+              type: integer
+              example: 15
+            video:
+              type: integer
+              example: 10
+        callsByStatus:
+          type: object
+          properties:
+            completed:
+              type: integer
+              example: 20
+            missed:
+              type: integer
+              example: 3
+            rejected:
+              type: integer
+              example: 2
+
+    # WebRTC Schemas
+    WebRTCOfferRequest:
+      type: object
+      required:
+        - offer
+        - targetUserId
+      properties:
+        offer:
+          type: object
+          description: WebRTC offer SDP
+          example:
+            type: offer
+            sdp: "v=0\r\no=- 123456789 123456789 IN IP4 0.0.0.0\r\n..."
+        targetUserId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+
+    WebRTCAnswerRequest:
+      type: object
+      required:
+        - answer
+        - targetUserId
+      properties:
+        answer:
+          type: object
+          description: WebRTC answer SDP
+          example:
+            type: answer
+            sdp: "v=0\r\no=- 123456789 123456789 IN IP4 0.0.0.0\r\n..."
+        targetUserId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+
+    ICECandidateRequest:
+      type: object
+      required:
+        - candidate
+        - targetUserId
+      properties:
+        candidate:
+          type: object
+          description: ICE candidate information
+          example:
+            candidate: "candidate:1 1 UDP 2130706431 192.168.1.100 54400 typ host"
+            sdpMLineIndex: 0
+            sdpMid: "audio"
+        targetUserId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+
+    # Wallet Schemas
+    CreateWalletRequest:
+      type: object
+      properties:
+        currency:
+          type: string
+          enum: [NGN, USD, EUR]
+          default: NGN
+          example: NGN
+
+    Wallet:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        userId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        balance:
+          type: number
+          format: decimal
+          example: 1250.50
+        currency:
+          type: string
+          example: NGN
+        status:
+          type: string
+          enum: [active, suspended, closed]
+          example: active
+        accountNumber:
+          type: string
+          example: "1234567890"
+        bankCode:
+          type: string
+          example: "011"
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    TransferRequest:
+      type: object
+      required:
+        - toUserId
+        - amount
+      properties:
+        toUserId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        amount:
+          type: number
+          minimum: 0.01
+          multipleOf: 0.01
+          example: 100.50
+        description:
+          type: string
+          maxLength: 255
+          example: Payment for services
+
+    Transaction:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        walletId:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        type:
+          type: string
+          enum: [credit, debit]
+          example: debit
+        amount:
+          type: number
+          format: decimal
+          example: 100.50
+        description:
+          type: string
+          example: Transfer to John Doe
+        reference:
+          type: string
+          example: TXN_123456789
+        status:
+          type: string
+          enum: [pending, completed, failed]
+          example: completed
+        fromUserId:
+          type: string
+          format: uuid
+          nullable: true
+        toUserId:
+          type: string
+          format: uuid
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    TransactionsResponse:
+      type: object
+      properties:
+        transactions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Transaction'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+
+    WalletStats:
+      type: object
+      properties:
+        totalTransactions:
+          type: integer
+          example: 45
+        totalCredits:
+          type: number
+          format: decimal
+          example: 2500.00
+        totalDebits:
+          type: number
+          format: decimal
+          example: 1249.50
+        currentBalance:
+          type: number
+          format: decimal
+          example: 1250.50
+        averageTransactionAmount:
+          type: number
+          format: decimal
+          example: 55.50
+    
+   # Add this to your existing OpenAPI spec
+x-socket-events:
+  authentication:
+    description: "Socket authentication using JWT token"
+    event: "connection"
+    parameters:
+      - name: token
+        in: auth
+        required: true
+        schema:
+          type: string
+          description: "JWT authentication token"
+    responses:
+      success:
+        description: "Successfully authenticated"
+      error:
+        description: "Authentication failed"
+
+  # Message Events
+  send_message:
+    description: "Send a real-time message"
+    event: "send_message"
+    parameters:
+      recipientId:
+        type: string
+        format: uuid
+        required: true
+      content:
+        type: string
+        required: true
+        minLength: 1
+        maxLength: 5000
+      messageType:
+        type: string
+        enum: [text, image, file]
+        default: text
+      fileUrl:
+        type: string
+        format: uri
+    responses:
+      success:
+        description: "Message sent successfully"
+        schema:
+          $ref: '#/components/schemas/Message'
+      error:
+        description: "Failed to send message"
+
+  new_message:
+    description: "Receive a new message"
+    event: "new_message"
+    type: "received"
+    schema:
+      allOf:
+        - $ref: '#/components/schemas/Message'
+        - type: object
+          properties:
+            sender_name:
+              type: string
+
+  mark_read:
+    description: "Mark message(s) as read"
+    event: "mark_read"
+    parameters:
+      messageId:
+        type: string
+        format: uuid
+        description: "Specific message ID (optional)"
+      senderId:
+        type: string
+        format: uuid
+        description: "Mark all messages from this sender as read (optional)"
+
+  # Call Events
+  start_call:
+    description: "Initiate a call"
+    event: "start_call"
+    parameters:
+      calleeId:
+        type: string
+        format: uuid
+        required: true
+      callType:
+        type: string
+        enum: [voice, video]
+        required: true
+
+  incoming_call:
+    description: "Receive incoming call notification"
+    event: "incoming_call"
+    type: "received"
+    schema:
+      type: object
+      properties:
+        callId:
+          type: string
+          format: uuid
+        callerId:
+          type: string
+          format: uuid
+        callerName:
+          type: string
+        callType:
+          type: string
+          enum: [voice, video]
+
+  answer_call:
+    description: "Answer an incoming call"
+    event: "answer_call"
+    parameters:
+      callId:
+        type: string
+        format: uuid
+        required: true
+
+  reject_call:
+    description: "Reject an incoming call"
+    event: "reject_call"
+    parameters:
+      callId:
+        type: string
+        format: uuid
+        required: true
+
+  end_call:
+    description: "End an active call"
+    event: "end_call"
+    parameters:
+      callId:
+        type: string
+        format: uuid
+        required: true
+      endReason:
+        type: string
+        enum: [completed, rejected, failed]
+        default: completed
+
+  # WebRTC Events
+  webrtc_offer:
+    description: "Send WebRTC offer"
+    event: "webrtc_offer"
+    parameters:
+      callId:
+        type: string
+        format: uuid
+        required: true
+      offer:
+        type: object
+        required: true
+        description: "WebRTC offer SDP"
+      targetUserId:
+        type: string
+        format: uuid
+        required: true
+
+  webrtc_answer:
+    description: "Send WebRTC answer"
+    event: "webrtc_answer"
+    parameters:
+      callId:
+        type: string
+        format: uuid
+        required: true
+      answer:
+        type: object
+        required: true
+        description: "WebRTC answer SDP"
+      targetUserId:
+        type: string
+        format: uuid
+        required: true
+
+  webrtc_ice_candidate:
+    description: "Send ICE candidate"
+    event: "webrtc_ice_candidate"
+    parameters:
+      callId:
+        type: string
+        format: uuid
+        required: true
+      candidate:
+        type: object
+        required: true
+        description: "ICE candidate information"
+      targetUserId:
+        type: string
+        format: uuid
+        required: true
+
+  # Typing Events
+  typing_start:
+    description: "Start typing indicator"
+    event: "typing_start"
+    parameters:
+      recipientId:
+        type: string
+        format: uuid
+        required: true
+
+  typing_stop:
+    description: "Stop typing indicator"
+    event: "typing_stop"
+    parameters:
+      recipientId:
+        type: string
+        format: uuid
+        required: true
+
+  user_typing:
+    description: "Receive typing indicator"
+    event: "user_typing"
+    type: "received"
+    schema:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        typing:
+          type: boolean
+
+  # Status Events
+  user_status:
+    description: "User online/offline status"
+    event: "user_status"
+    type: "received"
+    schema:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        isOnline:
+          type: boolean
+        timestamp:
+          type: string
+          format: date-time
+
+    # Common Schemas
+    Pagination:
+      type: object
+      properties:
+        currentPage:
+          type: integer
+          example: 1
+        totalPages:
+          type: integer
+          example: 10
+        totalItems:
+          type: integer
+          example: 95
+        itemsPerPage:
+          type: integer
+          example: 20
+        hasNextPage:
+          type: boolean
+          example: true
+        hasPreviousPage:
+          type: boolean
+          example: false
+
+    SuccessResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: Operation completed successfully
+        success:
+          type: boolean
+          example: true
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+          example: An error occurred
+        message:
+          type: string
+          example: Detailed error message
+        statusCode:
+          type: integer
+          example: 400
+
+    ValidationError:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Validation failed
+        details:
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+                example: email
+              message:
+                type: string
+                example: Email is required
+        statusCode:
+          type: integer
+          example: 400
+
+  responses:
+    ValidationError:
+      description: Validation error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ValidationError'
+
+    UnauthorizedError:
+      description: Authentication required
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Unauthorized
+              message:
+                type: string
+                example: Authentication token is required
+
+    ForbiddenError:
+      description: Insufficient permissions
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Forbidden
+              message:
+                type: string
+                example: Insufficient permissions to access this resource
+
+    NotFoundError:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Not Found
+              message:
+                type: string
+                example: The requested resource was not found
+
+    ConflictError:
+      description: Resource conflict
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Conflict
+              message:
+                type: string
+                example: Resource already exists
+
+    ServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: Internal Server Error
+              message:
+                type: string
+                example: An unexpected error occurred
+
+tags:
+  - name: Health
+    description: Health check endpoints
+  - name: Authentication
+    description: User authentication and authorization
+  - name: Profile
+    description: User profile management
+  - name: Messages
+    description: Messaging functionality
+  - name: Calls
+    description: Voice and video calling
+  - name: WebRTC Signaling
+    description: WebRTC signaling for real-time communication
+  - name: Wallet
+    description: Digital wallet management
+  - name: Wallet (Admin)
+    description: Administrative wallet operations
