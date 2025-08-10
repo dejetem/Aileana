@@ -63,6 +63,7 @@ A comprehensive backend API for communication applications featuring user authen
    ```
 
 The API will be available at `http://localhost:3000`
+The API docs will be available at `http://localhost:3000/docs/json#/`
 
 ### Method 2: Local Development
 
